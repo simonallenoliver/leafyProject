@@ -1,0 +1,56 @@
+
+
+*{
+color: black;
+margin: 0;
+padding: 0;
+}
+
+.headerBox{
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.headerTime{
+  flex: 1;
+  color: rgb(79, 113, 62);
+}
+
+.hero{
+  background-image: url("../src/images/heroplant.png");
+  background-size:cover;
+  background-position: center;
+  height: 600px;
+
+}
+
+.titlebox{
+  margin-left: 340px;
+  padding-top: 50px;
+}
+
+.leafyTitle{
+ font-size: 70pt;
+ color: rgb(79, 113, 62);
+}
+
+.tagline{
+  
+}
+
+
+/* UTILITIES */
+
+.smallImage{
+  width: 50px;
+}
+
+.searchBar{
+  border-radius: 15px;
+  align-items: center;
+  padding-left: 10px;
+  margin-right: 10px;
+}

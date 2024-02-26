@@ -6,6 +6,8 @@ margin: 0;
 padding: 0;
 }
 
+
+/* Header Component Classes */
 .headerBox{
   margin-top: 3px;
   margin-bottom: 3px;
@@ -19,6 +21,7 @@ padding: 0;
   color: rgb(79, 113, 62);
 }
 
+/* Hero Component Classes */
 .hero{
   background-image: url("../src/images/heroplant.png");
   background-size:cover;
@@ -42,6 +45,25 @@ padding: 0;
 }
 
 
+/* Product Preview Component Classes */
+.displayRow{
+  margin: 200px 50px 100px 50px;
+  display: flex;
+}
+
+.leftCol1{
+  flex: 2;
+}
+.rightCol1{
+  flex: 2;
+}
+
+.subHeading{
+  font-size: 50px;
+}
+
+
+
 /* UTILITIES */
 
 .smallImage{
@@ -54,3 +76,4 @@ padding: 0;
   padding-left: 10px;
   margin-right: 10px;
 }
+

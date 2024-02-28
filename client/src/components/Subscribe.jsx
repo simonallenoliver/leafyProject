@@ -6,7 +6,7 @@ const Subscribe = () => {
 
             <div className='medContainer'>
                 <h1>subscribe for cute plant pics</h1>
-                <div className='reviewBox'>
+                <div className='subBox'>
                     <h3><label>Email:</label>
                     <input type="text" /></h3>
                     <p><input type="checkbox" />Send me cute plant pics!</p>

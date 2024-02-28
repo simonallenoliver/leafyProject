@@ -6,7 +6,7 @@ import leftarrow from '../images/leftarrow.png'
 
 const ReviewCarousel = ({ reviews }) => {
     reviews = ['"I love my plant buddy more than my girlfriend!" -Tom S.', '"Best decision I ever made." -Maggie P.',
-     '"I don'+"'"+'t even talk to people anymore. My plant buddy is all I need!" -Fabien D.', '"My succculent, Mark, helped me get through a really nasty divorce." -Sally H.',
+     '"I don'+"'"+'t even talk to people anymore. My plant buddy is all I need!" -Fabien D.', '"My succculent, Mark, helped me get through a really tough divorce." -Sally H.',
     '"If you'+"'re thinking of buying a plant somewhere else, don"+"'t you even dare."+'" -John G.']
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -20,7 +20,7 @@ const ReviewCarousel = ({ reviews }) => {
 
   return (
     <div>
-      <div >
+      <div className='reviews'>
         {reviews.slice(currentIndex, currentIndex + 1).map((review, index) => (
           reviews[currentIndex]
         ))}

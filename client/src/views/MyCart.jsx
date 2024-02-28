@@ -17,7 +17,7 @@ const MyCart = () => {
             </div>
 
             <div style={{ textAlign:"center", margin:"50px"}}>
-                <p style={{ textAlign:"center", padding:"50px", backgroundColor:"blue"}}>items for sale</p>
+                <p style={{ textAlign:"center", padding:"50px", backgroundColor:"blue"}}>items in cart</p>
             
             </div>
             <div style={{ textAlign:"center"}}><h3><button>Checkout</button></h3></div>

@@ -8,8 +8,8 @@ const PlantCare = () => {
     return (
         <div className='bigContainer'>
 
-            <div >
-                <h1 className='leafGreen lefty' style={{ fontSize: "60px" }}>plant care tips</h1>
+            <div>
+                <div className='subheadcontainer'><h1 className='leafGreen lefty' style={{ fontSize: "60px", fontFamily:"serif",  }}>plant care tips</h1></div>
                 <div className='tipboxes'>
                     <div className='tipbox'>
                         <h3>Water them</h3>

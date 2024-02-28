@@ -1,8 +1,8 @@
 
-import image1 from '../images/plant5.jpg'
-import image2 from '../images/plant6.jpg'
+import image1 from '../images/plant1.jpg'
+import image2 from '../images/plant2.jpg'
 import image3 from '../images/skinny.jpg'
-import image4 from '../images/plant9.jpg'
+import image4 from '../images/plant4.jpg'
 import image5 from '../images/plant5.jpg'
 import image6 from '../images/plant6.jpg'
 import image7 from '../images/plant7.jpg'

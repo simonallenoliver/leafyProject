@@ -184,6 +184,15 @@ justify-content: space-around;
   font-family:Georgia;
 }
 
+/* all plants */
+.productrow{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 20px;
+  width: 1200px;
+  justify-content: center;
+}
+
 /* UTILITIES */
 
 

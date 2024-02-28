@@ -1,16 +1,18 @@
-
+import Carousel from "./Carousel"
 
 // style = {{display: "flex"}} in line styling tip
 
 const ProductPreview = () => {
   return (
     <>
-    <div className='displayRow' >
-        
-        <div className="leftCol1" ><h2 className='subHeading'>Meet some of our friends</h2></div>
-        <div className='rightCol1' ></div>
-        
-    </div>
+    <h1 className=" meetFriends">meet some of our friends</h1>
+<div className="carDiv">
+  
+<div className="verticalCenter"><Carousel/></div>
+
+</div>
+
+
     </>
   )
 }

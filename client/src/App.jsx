@@ -7,6 +7,7 @@ import AllPlants from './views/AllPlants'
 import PlantName from './views/PlantName'
 import Admin from './views/Admin'
 import AdminCreate from './views/AdminCreate'
+import Edit from './views/Edit'
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/plantname" element={<PlantName />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/admin/create" element={<AdminCreate />} />
+        <Route path="/admin/edit/:id" element={<Edit />} />
       </Routes>
     </>
   )

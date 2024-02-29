@@ -5,15 +5,7 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 
-import image1 from '../images/plant1.jpg'
-import image2 from '../images/plant2.jpg'
-import image3 from '../images/skinny.jpg'
-import image4 from '../images/plant4.jpg'
-import image5 from '../images/plant5.jpg'
-import image6 from '../images/plant6.jpg'
-import image7 from '../images/plant7.jpg'
-import image8 from '../images/plant8.jpg'
-import image9 from '../images/plant9.jpg'
+
 
 
 const Admin = () => {
@@ -36,6 +28,17 @@ const Admin = () => {
 
     const navigate = useNavigate();
 
+    const handleDelete = (deleteID) => {
+        console.log("you pressed the borrow/delete button on id:", deleteID);
+        axios.delete(`http://localhost:8000/api/plants/${deleteID}`)
+            .then((res) => {
+                console.log("🗑️🗑️🗑️SUCCESSFUL DELETION🗑️🗑️🗑️", res.data)
+                setRender(render + 1)
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    }
 
     return (
         <>
@@ -49,8 +52,8 @@ const Admin = () => {
                 <div className='productrow'>
                 {plants.map((plant, index)=> {
                     console.log("log:",plant.photo)
-                    let variable = plant.photo
-            return <div><img className='medImage' key={index} src={variable} alt={plant.photo +" image"} /><p>{plant.plantName} - {plant.price}</p>edit/delete</div>
+            return <div><img className='medImage' key={index} src= {`/images/${plant.photo}.jpg`} alt={plant.photo} /><p>{plant.plantName} - {plant.price}</p>
+            <Link to={`/admin/edit/${plant._id}`}> edit plant / </Link><button style={{ backgroundColor:"red", color:"white" }} onClick={() => handleDelete(plant._id)}>Delete Plant</button></div>
         })}
                 </div>
 

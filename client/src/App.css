@@ -253,6 +253,11 @@ justify-content: space-around;
   align-items: center;
 }
 
+.center{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
 
 .arrow{
   margin: 0 10px 0px 10px;

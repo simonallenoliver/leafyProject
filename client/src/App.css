@@ -15,12 +15,13 @@ a:link{
 
 /* Header Component Classes */
 .headerBox{
-  margin-top: 3px;
+  margin-top: 0px;
   margin-bottom: 3px;
-  margin-left: 5px;
+  margin-left: 0px;
   display: flex;
   align-items: center;
   background-color: white;
+  border-bottom: 1px solid grey;
   position:fixed;
   top: 0px;
   left: 0px;
@@ -29,7 +30,7 @@ a:link{
 }
 
 .headerTime{
-  
+  font-family: serif;
   color: rgb(79, 113, 62);
 }
 
@@ -124,6 +125,7 @@ justify-content: space-around;
 }
 .reviews{
   font-style: italic;
+  font-family: sans-serif;
   font-weight: lighter;
 }
 .subBox{
@@ -285,12 +287,13 @@ justify-content: space-around;
 
 
 .largeImage{
-  width: 370px;
+  width: 150px;
+  margin: 10px 30px;
 }
 
 .subheadcontainer{
   background-color: rgb(217, 224, 216);
-  flex: 1;
   align-items: center;
+  width: 100%;
 
 }

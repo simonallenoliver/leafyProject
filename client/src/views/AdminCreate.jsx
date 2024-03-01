@@ -93,62 +93,64 @@ const AdminCreate = () => {
 
             }
             setFormErrors({ ...formErrors, price: errorMsg });
-        }}
+        }
+    }
 
-        const photoHandler = (e) => {
-            //1.
-            setPhoto(e.target.value);
-            const value = e.target.value.trim();
-            let errorMsg = '';
-            //2.
-            if (value) {
-                if (value.length < 3) {
-                    errorMsg = 'Photo must be at least 3 characters long!';
-                } else if (value.length > 255) {
-                    errorMsg = 'Photo must be less than 255 characters long';
-                }
-            } else {
-                errorMsg = 'Photo is required!';
+    const photoHandler = (e) => {
+        //1.
+        setPhoto(e.target.value);
+        const value = e.target.value.trim();
+        let errorMsg = '';
+        //2.
+        if (value) {
+            if (value.length < 3) {
+                errorMsg = 'Photo must be at least 3 characters long!';
+            } else if (value.length > 255) {
+                errorMsg = 'Photo must be less than 255 characters long';
             }
-            //3.
-            setFormErrors({ ...formErrors, photo: errorMsg });
+        } else {
+            errorMsg = 'Photo is required!';
         }
+        //3.
+        setFormErrors({ ...formErrors, photo: errorMsg });
+    }
 
-        const descriptionHandler = (e) => {
-            //1.
-            setDescription(e.target.value);
-            const value = e.target.value.trim();
-            let errorMsg = '';
-            //2.
-            if (value) {
-                if (value.length < 5) {
-                    errorMsg = 'Description must be at least 5 characters long!';
-                } else if (value.length > 255) {
-                    errorMsg = 'Description must be less than 255 characters long';
-                }
-            } else {
-                errorMsg = 'Description is required!';
+    const descriptionHandler = (e) => {
+        //1.
+        setDescription(e.target.value);
+        const value = e.target.value.trim();
+        let errorMsg = '';
+        //2.
+        if (value) {
+            if (value.length < 5) {
+                errorMsg = 'Description must be at least 5 characters long!';
+            } else if (value.length > 255) {
+                errorMsg = 'Description must be less than 255 characters long';
             }
-            //3.
-            setFormErrors({ ...formErrors, description: errorMsg });
+        } else {
+            errorMsg = 'Description is required!';
         }
+        //3.
+        setFormErrors({ ...formErrors, description: errorMsg });
+    }
 
 
-        // used to make submit button clickable
-        // the every method returns true if every array element meets the criteria 
-        const validateForm = () => {
-            return Object.values(formErrors).every(value => value === '');
-        }
+    // used to make submit button clickable
+    // the every method returns true if every array element meets the criteria 
+    const validateForm = () => {
+        return Object.values(formErrors).every(value => value === '');
+    }
 
 
 
 
-        return (
-            <>
-                <Header />
-                <h1 className="leafGreen" style={{ fontSize: "40px", margin: "150px 0 30px 50px" }}>Admin - Create</h1>
-                <br />
-                <p>Add a plant!</p>
+    return (
+        <>
+            <Header />
+            <h1 className="leafGreen" style={{ fontSize: "40px", margin: "150px 0 30px 50px" }}>Admin - Create</h1>
+            <br />
+            <div className='center'>
+                
                 <form onSubmit={handleSubmit}>
                     <div>
                         {formErrors.plantName && <p>{formErrors.plantName}</p>}
@@ -164,21 +166,21 @@ const AdminCreate = () => {
                         {errors.price && <p style={{ color: "red", }}>{errors.price.message}</p>}
                     </div>
                     <div>
-                    {formErrors.type && <p>{formErrors.type}</p>}
+                        {formErrors.type && <p>{formErrors.type}</p>}
                         Type:
                         <input type="string" value={type} onChange={typeHandler} />
                         {errors.type && <p style={{ color: "red", }}>{errors.type.message}</p>}
                     </div>
 
                     <div>
-                    {formErrors.photo && <p>{formErrors.photo}</p>}
+                        {formErrors.photo && <p>{formErrors.photo}</p>}
                         Photo:
                         <input type="string" value={photo} onChange={photoHandler} />
                         {errors.photo && <p style={{ color: "red", }}>{errors.photo.message}</p>}
                     </div>
 
                     <div>
-                    {formErrors.description && <p>{formErrors.description}</p>}
+                        {formErrors.description && <p>{formErrors.description}</p>}
                         Description:
                         <input type="text" className="largeInput" value={description} onChange={descriptionHandler} />
                         {errors.description && <p style={{ color: "red", }}>{errors.description.message}</p>}
@@ -196,10 +198,10 @@ const AdminCreate = () => {
 
                 </form>
 
-
-            </>
-        )
-    }
+            </div>
+        </>
+    )
+}
 
 export default AdminCreate
 

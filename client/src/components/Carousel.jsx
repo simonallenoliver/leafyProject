@@ -34,15 +34,15 @@ const Carousel = ({ images }) => {
   return (
     <div className="imagecarousel">
       <div className="imagecontainer">
-      <button className="revarrow prev" onClick={handlePrev}>
-      <img class='smallarrow' src= {leftarrow} alt="right arrow" />
+      <button className="revarroww prev1" onClick={handlePrev}>
+      <img class='smallarroww' src= {leftarrow} alt="right arrow" />
       </button>
         {plants.slice(currentIndex, currentIndex + 5).map((plant, index) => (
            <div><img className='medImage' key={index} src={`/images/${plant.photo}.jpg`} alt={plant.plantName} /> <p><Link to={`/oneplant/${plant._id}`} className='navbarcatsingle'>{plant.plantName}</Link> - {plant.price}</p></div>
 
         ))}
-      <button className="revarrow next" onClick={handleNext}>
-        <img class='smallarrow' src= {rightarrow} alt="right arrow" />
+      <button className="revarroww next1" onClick={handleNext}>
+        <img class='smallarroww' src= {rightarrow} alt="right arrow" />
       </button>
       </div>
       

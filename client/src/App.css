@@ -1,7 +1,7 @@
 
 
 *{
-color: black;
+color: darkslategray;
 margin: 0;
 padding: 0;
 font-family: 'Trebuchet MS';
@@ -130,26 +130,51 @@ padding: 10px 0 14px 0;
 .reviewdiv{
   background-color: rgb(217, 224, 216);
   padding: 15px 0 1px 0;
-  margin-bottom: 70px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .reviewBox{
-  margin: 30px 30px 0 30px;
-  padding: 80px 0px 20px 0px;
+  margin: 0px 10px 0 10px;
+  padding: 0px 0px 20px 0px;
   width: 1100px;
   text-align: center;
   align-items: center;
-  border: 4px solid black;
-  border-radius: 3px;
-  background-color: white;
+  background-color: rgb(217, 224, 216);
 }
 .reviews{
   font-style: italic;
   font-family: sans-serif;
   font-weight: lighter;
+  align-items: center;
+  flex: 4;
+  display: flex;
+  justify-content: center;
+}
+.arrowBox{
+  display: flex;
+  justify-content: center;
+  width: 1100px;
+  background-color: rgb(217, 224, 216);
+}
+.prev{
+  flex: 1;
+  background-color: rgb(217, 224, 216);
+}
+.prev1{
+  flex: 1;
+  background-color: white;
+}
+.next{
+  flex: 1;
+  background-color: rgb(217, 224, 216);
+}
+.next1{
+  flex: 1;
+  background-color: white;
 }
 .subBox{
-  margin: 30px;
+  margin: 30px 30px 0 30px;
   padding: 20px 0px 20px 0px;
   width: 340px;
   text-align: center;
@@ -162,7 +187,7 @@ padding: 10px 0 14px 0;
 .catboxes{
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 
@@ -206,7 +231,6 @@ padding: 10px 0 14px 0;
   border-radius: 10px;
 }
 .categorytext:hover{
-  font-size: 26pt;
   color: white;
   background-color: rgb(0, 0, 0, .7);
 }
@@ -262,15 +286,29 @@ padding: 10px 0 14px 0;
 }
 
 .smallarrow{
-  width: 50px;
+  width: 30px;
   margin-bottom: 3px;
   margin-left: 3px;
-
+  background-color: rgb(217, 224, 216);
+}
+.smallarroww{
+  width: 30px;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  background-color: white;
 }
 .smallarrow:hover{
-  width: 53px;
+  width: 33px;
   margin-bottom: 0px;
   margin-left: 0px;
+  cursor: pointer;
+  
+}
+.smallarroww:hover{
+  width: 33px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  cursor: pointer;
   
 }
 
@@ -307,7 +345,7 @@ padding: 10px 0 14px 0;
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-bottom: 60px;
+  padding-bottom: 5px;
   margin-top: 30px;
 }
 
@@ -323,10 +361,21 @@ padding: 10px 0 14px 0;
 
 
 .revarrow{
-  margin: 40px 20px;
+  margin: 30px 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(217, 224, 216);
+}
+.revarroww{
+  margin: 30px 10px;
   border: none;
   outline: none;
   background-color: white;
+}
+.cararrow{
+  margin: 30px 10px;
+  border: none;
+  outline: none;
 }
 
 

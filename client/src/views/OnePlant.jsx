@@ -10,6 +10,7 @@ const OnePlant = () => {
 
     // here we set up useState and useEffect to plant our requested data from axios
     const [plant, setPlant] = useState({});
+    const [inStock, setInStock] =useState()
     const { id } = useParams();
 
     // useEffect lets us sync up with our api
@@ -27,7 +28,20 @@ const OnePlant = () => {
 
     const navigate = useNavigate();
 
+    const AddToCart = () => {
 
+        const tempObject = { inStock: false }
+        console.log("you pressed the add to cart button button on id:", id);
+        axios.put(`http://localhost:8000/api/plants/${id}`, tempObject)
+            .then((res) => {
+                console.log("databse contacted", res.data)
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+            alert("added to cart!")
+            navigate('/mycart')
+    }
 
     return (
         <>
@@ -39,7 +53,7 @@ const OnePlant = () => {
                 <p className='description'>{plant.description}</p>
                 <p>Price: {plant.price}---{plant.inStock === true ? "In stock!" : "Out of stock :("}</p>
                 <br />
-                <button>Add to Cart</button>
+                <button onClick={() => AddToCart()}>add to cart</button>
                 </div>
                 <div className='plantImage'><img className='xlargeImage' src={`/images/${plant.photo}.jpg`} alt="plant pic" /></div>
                 

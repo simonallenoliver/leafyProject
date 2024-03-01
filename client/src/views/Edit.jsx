@@ -164,7 +164,7 @@ const Edit = () => {
     return (
         <>
 
-            <Header />
+            <Header/>
             <h1 className="leafGreen" style={{ fontSize: "40px", margin: "150px 0 30px 50px" }}>Admin - Edit</h1>
             <br />
             <div className='center'>
@@ -200,7 +200,7 @@ const Edit = () => {
                     <div>
                         {formErrors.description && <p>{formErrors.description}</p>}
                         Description:
-                        <input type="text" value={description} onChange={descriptionHandler} />
+                        <input type="text" className='largeInput' value={description} onChange={descriptionHandler} />
                         {errors.description && <p style={{ color: "red", }}>{errors.description.message}</p>}
                     </div>
 

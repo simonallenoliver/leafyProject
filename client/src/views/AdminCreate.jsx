@@ -180,7 +180,7 @@ const AdminCreate = () => {
                     <div>
                     {formErrors.description && <p>{formErrors.description}</p>}
                         Description:
-                        <input type="text" value={description} onChange={descriptionHandler} />
+                        <input type="text" className="largeInput" value={description} onChange={descriptionHandler} />
                         {errors.description && <p style={{ color: "red", }}>{errors.description.message}</p>}
                     </div>
 

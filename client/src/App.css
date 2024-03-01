@@ -4,7 +4,8 @@
 color: black;
 margin: 0;
 padding: 0;
-font-family: sans-serif;
+font-family: 'Trebuchet MS';
+font-weight: normal;
 }
 
 a:link{
@@ -32,6 +33,8 @@ a:link{
 .headerTime{
   font-family: serif;
   color: rgb(79, 113, 62);
+  font-style: normal;
+  font-size: 28px;
 }
 
 .icontitle{
@@ -54,15 +57,15 @@ a:link{
   background-image: url("../src/images/heroplant.png");
   background-size:cover;
   background-position: center;
-  height: 660px;
-  margin-bottom: 100px;
+  height: 530px;
+  margin-bottom: 30px;
   margin-top: 70px;
 
 }
 
 .titlebox{
   margin-left: 340px;
-  padding-top: 120px;
+  padding-top: 80px;
 }
 
 .leafyTitle{
@@ -102,6 +105,7 @@ justify-content: space-around;
 .meetFriends{
   margin-left: 60px;
   font-size: 35px;
+  font-weight: lighter;
 }
 
 .tipboxes{
@@ -110,18 +114,34 @@ justify-content: space-around;
 
 .tipbox{
   background-color: white;
-  margin: 20px 20px 0px 20px;
-  padding: 20px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+}
+
+.plantCareTitle{
+font-size: 40px; 
+margin-left: 55px;
+font-weight: lighter;
+padding: 10px 0 14px 0;
+}
+
+/* REVIEWS */
+
+.reviewdiv{
+  background-color: rgb(217, 224, 216);
+  padding: 15px 0 1px 0;
+  margin-bottom: 70px;
 }
 
 .reviewBox{
-  margin: 30px;
+  margin: 30px 30px 0 30px;
   padding: 80px 0px 20px 0px;
   width: 1100px;
   text-align: center;
   align-items: center;
   border: 4px solid black;
   border-radius: 3px;
+  background-color: white;
 }
 .reviews{
   font-style: italic;
@@ -149,8 +169,8 @@ justify-content: space-around;
 .catbox{
   border-radius: 15px;
   margin: 20px;
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,7 +200,7 @@ justify-content: space-around;
 }
 
 .categorytext{
-  font-size: 26pt;
+  font-size: 16pt;
   color: black;
   background-color: rgb(255, 255, 255, .6);
   border-radius: 10px;
@@ -206,6 +226,25 @@ justify-content: space-around;
   gap: 20px;
   width: 1200px;
   justify-content: center;
+}
+
+/* ONE PLANT */
+
+.plantDisplay{
+  display: flex;
+  align-items: center;
+}
+.plantTitle{
+  font-size: 60px;
+}
+.description{
+  margin: 10px 0 20px 0;
+}
+.plantText{
+  flex: 1;
+}
+.plantImage{
+  flex: 2;
 }
 
 /* UTILITIES */
@@ -268,7 +307,7 @@ justify-content: space-around;
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-bottom: 110px;
+  margin-bottom: 60px;
   margin-top: 30px;
 }
 
@@ -292,13 +331,30 @@ justify-content: space-around;
 
 
 .largeImage{
-  width: 150px;
-  margin: 10px 30px;
+  width: 484px;
+  height: 330px;
+  margin: 15px 0px 0 0px ;
 }
 
 .subheadcontainer{
   background-color: rgb(217, 224, 216);
   align-items: center;
   width: 100%;
+}
 
+.centeredPage{
+  display: flex;
+  justify-content: center;
+  margin: 80px 0 0 0;
+}
+
+.xlargeImage{
+  width: 450px;
+  height: 614px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.largeInput{
+  width: 300px;
+  height: 50px;
 }

@@ -38,7 +38,7 @@ const Carousel = ({ images }) => {
       <img class='smallarrow' src= {leftarrow} alt="right arrow" />
       </button>
         {plants.slice(currentIndex, currentIndex + 5).map((plant, index) => (
-           <div><img className='medImage' key={index} src={`/images/${plant.photo}.jpg`} alt={plant.plantName} /> <p><Link to={`/plantname`} className='navbarcatsingle'>{plant.plantName}</Link> - {plant.price}</p></div>
+           <div><img className='medImage' key={index} src={`/images/${plant.photo}.jpg`} alt={plant.plantName} /> <p><Link to={`/oneplant/${plant._id}`} className='navbarcatsingle'>{plant.plantName}</Link> - {plant.price}</p></div>
 
         ))}
       <button className="revarrow next" onClick={handleNext}>

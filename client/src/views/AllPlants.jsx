@@ -21,13 +21,13 @@ const AllPlants = () => {
     return (
         <>
             <Header />
-            <h1 className="leafGreen" style={{ fontSize: "40px", margin: "150px 0 30px 50px" }}>All Plants</h1>
+            <h1 className="leafGreen" style={{ fontSize: "40px", margin: "150px 0 30px 50px" }}>all plants</h1>
 
             <div className='bigContainer'>
                 <div className='productrow'>
                     {plants.map((plant, index) => (
                         <div><img className='medImage' key={index} src={`/images/${plant.photo}.jpg`} alt={`Image ${index}`} /> 
-                        <p><Link to={`/plantname`} className='navbarcatsingle'>{plant.plantName}</Link> - {plant.price}</p></div>
+                        <p><Link to={`/oneplant/${plant._id}`} className='navbarcatsingle'>{plant.plantName}</Link> - {plant.price}</p></div>
                     ))}
                 </div>
 

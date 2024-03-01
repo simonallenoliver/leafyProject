@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <>
       <div className='headerBox'>
-        <div className='icontitle'><img className='smallImage' src='../src/images/leafy.png'></img>
-        <h1 className='headerTime'>Leafy</h1>
+        <div className='icontitle'><Link to={`/`} style={{fontStyle:"normal"}}><img className='smallImage' src='/images/leafy.png'></img></Link>
+        <h1 className='headerTime'><Link to={`/`} style={{fontStyle:"normal"}}>Leafy</Link></h1>
         </div>
         
         <div className='navbarcats'>

@@ -1,13 +1,13 @@
 import React from 'react'
-import wateringCan from '../images/wateringCan.png'
-import sunshine from '../images/sunshine.png'
-import plantfriends from '../images/plantfriends.png'
+import wateringCan from '../images/wateringCan.jpg'
+import sunshine from '../images/sunshine.jpg'
+import plantfriends from '../images/plantfriends.jpg'
 
 
 const PlantCare = () => {
     return (
         <>
-            <div className='subheadcontainer'><h1 className='leafGreen lefty' style={{ fontSize: "60px", fontFamily: "serif", marginLeft:"140px" }}>plant care tips</h1></div>
+            <div className='subheadcontainer'><h1 className='leafGreen lefty plantCareTitle' >plant care tips</h1></div>
             <div className='bigContainer'>
 
                 <div>

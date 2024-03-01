@@ -2,6 +2,8 @@ import React from 'react'
 
 const Subscribe = () => {
     return (
+        <>
+        <div style={{backgroundColor:"rgb(217, 224, 216)"}}>
         <div className='bigContainer'>
 
             <div className='medContainer'>
@@ -15,6 +17,8 @@ const Subscribe = () => {
                 </div>
             </div>
         </div>
+        </div>
+        </>
     )
 }
 

@@ -46,6 +46,8 @@ const Admin = () => {
             <h1 className="leafGreen" style={{ fontSize: "40px", margin: "150px 0 30px 50px" }}>Admin</h1>
 
             <p style={{ fontSize: "20px", margin: "10px 0 30px 50px" }}><Link to={`/admin/create`} >Add new plant</Link></p>
+            <p style={{ fontSize: "20px", margin: "10px 0 30px 50px" }}><Link to={`/admin/create`} >Categories</Link></p>
+            <p style={{ fontSize: "20px", margin: "10px 0 30px 50px" }}><Link to={`/admin/create`} >New Arrivals</Link></p>
 
             <div className='bigContainer'>
                 
